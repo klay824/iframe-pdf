@@ -1,9 +1,17 @@
+import { useState, useEffect } from "react";
+
 function App() {
-  const samplePdf = "http://www.pdf995.com/samples/pdf.pdf"
+  const [url, setUrl] = useState();
 
-  const blob = new Blob([samplePdf], { type: 'application/pdf' });
+  useEffect(() => {
+    fetch('http://localhost:3000/iframe-pdf/sample.pdf')
+      .then((res) => res.blob())
+      .then((myBlob) => {
+        setUrl(URL.createObjectURL(myBlob));
+      });
+  }, []);
 
-  const url = URL.createObjectURL(blob)
+
 
   return (
     <>
