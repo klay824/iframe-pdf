@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/iframe-pdf/static/js/main.a7d15b62.js",
+    "main.js": "/iframe-pdf/static/js/main.d1c4805f.js",
     "index.html": "/iframe-pdf/index.html",
-    "main.a7d15b62.js.map": "/iframe-pdf/static/js/main.a7d15b62.js.map"
+    "main.d1c4805f.js.map": "/iframe-pdf/static/js/main.d1c4805f.js.map"
   },
   "entrypoints": [
-    "static/js/main.a7d15b62.js"
+    "static/js/main.d1c4805f.js"
   ]
 }
