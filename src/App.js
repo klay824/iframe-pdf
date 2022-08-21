@@ -4,7 +4,7 @@ function App() {
   const [url, setUrl] = useState();
 
   useEffect(() => {
-    fetch('/iframe-pdf/sample.pdf')
+    fetch('http://localhost:3000/iframe-pdf/sample.pdf')
       .then((res) => res.blob())
       .then((myBlob) => {
         setUrl(URL.createObjectURL(myBlob));
@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <h1>iFrame Rendering of PDF Blob</h1>
-      <iframe title="pdf" src={url} style={{ height: '1250px', width: '100%' }}></iframe>
+      <embed title="pdf" src={url} style={{ height: '1250px', width: '100%' }}></embed>
     </>
   );
 }
