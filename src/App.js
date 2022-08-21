@@ -4,7 +4,7 @@ function App() {
   const [url, setUrl] = useState();
 
   useEffect(() => {
-    fetch('//localhost:3000/iframe-pdf/sample.pdf')
+    fetch('http://localhost:3000/iframe-pdf/sample.pdf')
       .then((res) => res.blob())
       .then((myBlob) => {
         setUrl(URL.createObjectURL(myBlob));
